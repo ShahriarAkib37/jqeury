@@ -1,0 +1,162 @@
+:root {
+    --primaryfont: "Poppins", sans-serif;
+    --2ndfont: "PT Sans", sans-serif;
+    --secondaryColor: #353535;
+  }
+
+/* cmm css */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container{
+
+    width: 1170px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul,ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,h2,h3,h4,h5,h6,ul,p,span,ol {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: var(--primaryfont);
+  }
+  /* cmm css end */
+
+    /* navBar s  */
+
+
+            
+   .navbar{
+    width: 100%;
+    background-color: rgb(123, 177, 230);
+    height: 50px;
+    text-align: center;
+}
+   
+
+li{
+  display: inline-block;
+  padding: 20px 35px;
+}
+.navbar li a{
+ 
+  color: black;
+}
+   .navbar.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+ .container h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 800;
+ }
+ .container p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    font-style: italic;
+    
+ }
+
+  .friend {
+    margin: 50px 0;
+  }
+
+    /* navBar e */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* FAQ starts */
+
+  #faqWrapper{
+    margin: 80px 0;
+}
+#faqWrapper .faq {
+    margin-bottom: 8px;
+    
+}
+ .faq .faqHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 20px 15px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+}
+
+ .faq .faqBody{
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+   transition: 0.3s ease ;
+}
+
+#faqWrapper .faq.active .faqBody{
+     opacity: 1;
+    visibility: visible;
+    height: auto;
+    padding: 20px;
+}
+ .faq .faqHeader span{
+    transition: 0.3s;
+}
+ .faq.active .faqHeader span{
+    transform: rotate(180deg);
+}
+
+  /* FAQ end */
+
+  /* preLoader s */
+
+    .preLoader{
+        position: fixed;
+        background-color: black;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+ .preLoader img{
+
+        height: 200px;
+
+    }
+
+  /* preLoader e */
